@@ -8,7 +8,7 @@ namespace EF_Core_DAL.Entities
         public int Id { get; set; }
         public DateTime Created { get; set; } = DateTime.Now;
         public DateTime? Updated { get; set; }
-        //[Timestamp]
+        [Timestamp]
         public byte[] TimeStamp { get; set; }
     }
 }
